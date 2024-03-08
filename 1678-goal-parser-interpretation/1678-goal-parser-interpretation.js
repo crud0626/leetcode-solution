@@ -1,0 +1,1 @@
+const interpret = (command) => command.replace(/\(\)|\(al\)/g, (str) => str === '()' ? 'o' : 'al');
