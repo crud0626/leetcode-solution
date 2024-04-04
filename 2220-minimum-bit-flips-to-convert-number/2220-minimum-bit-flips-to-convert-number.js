@@ -1,0 +1,1 @@
+const minBitFlips = (start, goal) => (start ^ goal).toString(2).match(/1/g)?.length;
