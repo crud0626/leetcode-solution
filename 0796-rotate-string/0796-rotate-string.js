@@ -1,0 +1,1 @@
+const rotateString = (s, goal) => (s + s).includes(goal);
