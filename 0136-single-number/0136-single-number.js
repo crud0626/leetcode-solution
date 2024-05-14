@@ -1,0 +1,1 @@
+const singleNumber = (nums) => nums.reduce((acc, num) => acc ^= num, 0);
