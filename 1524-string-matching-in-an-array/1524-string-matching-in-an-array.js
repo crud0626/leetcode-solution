@@ -1,0 +1,1 @@
+const stringMatching = (words) => words.filter(word => words.some(target => word !== target && target.includes(word)));
