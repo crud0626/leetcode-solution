@@ -1,0 +1,1 @@
+const minimumOperations = (nums) => nums.filter(num => num % 3 !== 0).length;
