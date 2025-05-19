@@ -1,16 +1,16 @@
 const maximumNumberOfStringPairs = (words) => {
     let pairs = 0;
-
-    const wordsMap = new Map(words.map((word, idx) => [word, idx]));
+    const set = new Set();
     
-    for (let i = 0; i < words.length - 1; i++) {
+    for (let i = words.length-1; 0 <= i; i--) {
         const word = words[i];
         const reverseWord = word[1] + word[0];
-        const targetIdx = wordsMap.get(reverseWord);
 
-        if (typeof targetIdx === 'number' && targetIdx > i) {
+        if (set.has(reverseWord)) {
             pairs++;
         }
+        
+        set.add(word);
     }
 
     return pairs;
